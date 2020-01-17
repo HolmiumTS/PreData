@@ -5,7 +5,8 @@ out_file = open(d, "w")
 txt = in_file.readlines()
 for line in txt:
     tot = int(line.split(" ")[1])
-    s = line[:-1]
+    s = line[:-2]
+    print(s[-1])
     if tot < 49:
         x = 49 - tot
         for p in range(x):
